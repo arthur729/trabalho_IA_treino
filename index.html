@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Chat with AI</h1>
+        <div id="chat-output" class="chat-output"></div>
+        <form id="chat-form" class="chat-form">
+            <textarea id="user-input" rows="4" placeholder="Digite sua resposta..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
